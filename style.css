@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+:root {
+    --fonte01: 'Ms Madi', 'cursive';
+    --fonte02: 'Baloo 2', 'cursive';
+    --fonte03: 'Amiri', serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-attachment: fixed;
+    background-image:
+    -moz-linear-gradient(45deg, #000 25%, transparent 25%,transparent 75%, #000 75%, #000 100%),
+    -moz-linear-gradient(45deg, #000 25%, transparent 25%,transparent 75%, #000 75%, #000 100%);
+    background-image:
+    -webkit-linear-gradient(45deg, #000 25%, transparent 25%,transparent 75%, #000 75%, #000 100%),
+    -webkit-linear-gradient(45deg, #000 25%, transparent 25%,transparent 75%, #000 75%, #000 100%);
+    -moz-background-size:100px 100px;
+    background-size:100px 100px;
+    -webkit-background-size:101px 101px;
+    background-position:0 0, 50px 50px;
+}
+
+header {
+    height: 350px;
+    width: 100vw;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: var(--fonte01);
+    font-size: 4em;
+    text-align: center;
+    color: #93D92B;
+    
+}
+
+header > h1 {
+    color: #93D92B;
+    text-shadow: 4px 4px 2px rgba(39, 38, 38, 0.63);
+}
+
+div {
+    height: 350px;
+    width: 100vw;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.219);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.container {
+    display: flex;
+}
+
+div > h2 {
+    background-color: #f2f2f2cb;
+    font-family: var(--fonte03);
+    text-align: center;
+}
+
+div > p {
+    width: 45%;
+    height: 150px;
+    display: inline-block;
+    background-color: #d9d9d9c4;
+    font-family: var(--fonte02);
+    text-align: center;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background: #f2f2f2cb;
+    text-align: center;
+}
