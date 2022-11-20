@@ -10,14 +10,6 @@
     --fonte03: 'Amiri', serif;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 body {
     background-attachment: fixed;
     background-image:
@@ -34,7 +26,7 @@ body {
 
 header {
     height: 350px;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 30px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -53,20 +45,15 @@ header > h1 {
     text-shadow: 4px 4px 2px rgba(39, 38, 38, 0.63);
 }
 
-div {
+.container {
     height: 350px;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 30px;
     background: rgba(255, 255, 255, 0.219);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.8px);
     -webkit-backdrop-filter: blur(2.8px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    
-}
-
-.container {
-    display: flex;
 }
 
 div > h2 {
@@ -76,19 +63,28 @@ div > h2 {
 }
 
 div > p {
-    width: 45%;
     height: 150px;
     display: inline-block;
     background-color: #d9d9d9c4;
     font-family: var(--fonte02);
     text-align: center;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 
 footer {
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     background: #f2f2f2cb;
     text-align: center;
+}
+
+.flex-items {
+    width: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+    .flex-items {
+        width: 100%;
+    }  
 }
